@@ -28,6 +28,7 @@ export default {
     #top_header{
         background-color: #D9D6D1;  
         color: #565656;  
+        font-size: 12px;
     }
 
 </style>

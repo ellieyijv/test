@@ -1,23 +1,23 @@
+const env = require('dotenv').config()
+const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
+  server: {
+    port: 3666, // default: 3000
+  },
   /*
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'test',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: pkg.description },
+      
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "stylesheet" ,
-        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'},
-    ],
+  
     script:[
       { 
         src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
@@ -31,7 +31,16 @@ module.exports = {
         src: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js",
         type: "text/javascript"
       },
-    ]
+     
+    ],
+
+    link: [
+      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "stylesheet" ,
+        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'},
+    ],
 
   },
   /*
@@ -59,6 +68,8 @@ module.exports = {
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
+    'nuxt-device-detect',
+    'nuxt-leaflet',
   ],
   /*
   ** Build configuration

@@ -1,9 +1,15 @@
 <template>
-  <div>
-    <topHeader />
-    <topNavigation />
-    <nuxt />
-  </div>
+    <section>
+        <div v-if="$device.isMobile"> 
+            <topNavigation />
+            <nuxt />
+        </div>
+        <div v-else>
+            <topHeader />
+            <topNavigation />
+            <nuxt />
+        </div>
+    </section>
 </template>
 
 <script>
