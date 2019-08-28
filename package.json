@@ -19,7 +19,8 @@
     "jquery": "^3.4.1",
     "nuxt": "^2.4.0",
     "nuxt-device-detect": "^1.1.5",
-    "nuxt-leaflet": "0.0.19"
+    "nuxt-leaflet": "0.0.19",
+    "vue-slider-component": "^3.0.39"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

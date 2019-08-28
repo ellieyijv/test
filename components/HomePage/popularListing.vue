@@ -10,7 +10,7 @@
             </div>
             <b-container>
             <b-row>
-                <b-col v-for="item in popularlist" :key="item.id" md="4" style="margin: 1em auto">
+                <b-col v-for="item in popularlist" :key="item.id" md="4" sm="6" cols="12" style="margin: 1em auto">
                     <productCard :item = "item"/>
                 </b-col>
             </b-row>
@@ -30,69 +30,95 @@ export default {
         return{
             popularlist: [{
                 id:1,
-                price: 5000,
-                place:"Traditional Apartments",
-                type: "for sale",
-                attribute:{
-                    beds:3,
-                    wc:2,
-                    carpark: 2
-                }
+                price: '550,000',
+                attributes:{
+                    listType: 'FOR SALE'
+                },
+                propertyName: 'Traditional Apartments',
+                description:{
+                    bedrooms:3,
+                    bathrooms: 2,
+                    parkings: 1,
+                    landSize: 240
+                },
+                address:'33 girdsaf hornsby'
+                
             },
             {
                 id:2,
-                price: 5000,
-                place:"Traditional Apartments",
-                type: "for sale",
-                attribute:{
-                    beds:3,
-                    wc:2,
-                    carpark: 2
-                }
+                price: '550,000',
+                attributes:{
+                    listType: 'FOR SALE'
+                },
+                propertyName: 'Traditional Apartments',
+                description:{
+                    bedrooms:3,
+                    bathrooms: 2,
+                    parkings: 1,
+                    landSize: 240
+                },
+                address:'33 girdsaf hornsby'
+                
             },
             {
                 id:3,
-                price: 5000,
-                place:"Traditional Apartments",
-                type: "for sale",
-                attribute:{
-                    beds:3,
-                    wc:2,
-                    carpark: 2
-                }
+                    price: '550,000',
+                attributes:{
+                    listType: 'FOR SALE'
+                },
+                propertyName: 'Traditional Apartments',
+                description:{
+                    bedrooms:3,
+                    bathrooms: 2,
+                    parkings: 1,
+                    landSize: 240
+                },
+                address:'33 girdsaf hornsby'
             },
              {
                 id:4,
-                price: 5000,
-                place:"Traditional Apartments",
-                type: "for sale",
-                attribute:{
-                    beds:3,
-                    wc:2,
-                    carpark: 2
-                }
+                    price: '550,000',
+                attributes:{
+                    listType: 'For Sale'
+                },
+                propertyName: 'Traditional Apartments',
+                description:{
+                    bedrooms:3,
+                    bathrooms: 2,
+                    parkings: 1,
+                    landSize: 240
+                },
+                address:'33 girdsaf hornsby'
             },
              {
                 id:5,
-                price: 5000,
-                place:"Traditional Apartments",
-                type: "for sale",
-                attribute:{
-                    beds:3,
-                    wc:2,
-                    carpark: 2
-                }
+                     price: '550,000',
+                attributes:{
+                    listType: 'For Sale'
+                },
+                propertyName: 'Traditional Apartments',
+                description:{
+                    bedrooms:3,
+                    bathrooms: 2,
+                    parkings: 1,
+                    landSize: 240
+                },
+                address:'33 girdsaf hornsby'
             },
              {
                 id:6,
-                price: 5000,
-                place:"Traditional Apartments",
-                type: "for sale",
-                attribute:{
-                    beds:3,
-                    wc:2,
-                    carpark: 2
-                }
+                     price: '550,000',
+                attributes:{
+                    listType: 'For Sale'
+                },
+                propertyName: 'Traditional Apartments',
+                description:{
+                    bedrooms:3,
+                    bathrooms: 2,
+                    parkings: 1,
+                    landSize: 240
+                },
+                address:'33 girdsaf hornsby'
             },]
         }
     }
@@ -129,6 +155,12 @@ export default {
     @media (max-width:499px) {
         #popular .btn-area button{
             margin: 2em 0.5em;
+        }
+    }
+    @media (max-width:576px) {
+         #popular .card{
+           width:60vw;
+           margin:auto;
         }
     }
 
