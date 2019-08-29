@@ -5,7 +5,7 @@
                 <b-col md="4" sm="5" style="position:relative">
                     <b-card-img src="/homepage/popularlist.png" class="rounded-0"></b-card-img>
                     <div class="price" >
-                        <span>${{item.price}}</span>
+                        <span class="pl-2">${{item.price}}</span>
                         <b-button class="btn  pull-right" type="button" >{{item.attributes.listType}}</b-button>
                     </div>
                 </b-col>
@@ -58,6 +58,7 @@ export default {
         bottom:0;
         width:100%;
         font-size:18px;
+        font-weight:bold;
         color:white;
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
     }
@@ -67,4 +68,6 @@ export default {
         font-size:12px;
         font-weight:bold;
     }
+
+    
 </style>

@@ -7,7 +7,7 @@
             <span v-else>
                 <search />
             </span>      
-      </b-container>
+      </b-container>  
     </b-container>
 </template>
 

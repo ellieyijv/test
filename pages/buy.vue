@@ -12,7 +12,7 @@
                     </b-dropdown>
             
                     <span v-for="(item, index) in saleItems" :key="index" >
-                        <productCardHorizontal :item="item" class="mb-4"/>
+                        <productCardHorizontal :item="item" class="mb-4 mx-4 mx-sm-0"/>
                     </span>
                 </b-col>
                 <b-col cols="12" sm="12" md="4" class="mt-2 pl-5">
@@ -173,6 +173,6 @@ export default {
         font-size:14px; 
         color:  #6c757d;
     }
-
+   
  
 </style>

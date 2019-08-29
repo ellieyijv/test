@@ -4,16 +4,26 @@
                 <b-col cols="12" style="position:relative">
                     <b-card-img src="/homepage/popularlist.png" class="rounded-0"></b-card-img>
                     <div class="price  pl-1">
-                        <span>${{item.price}}</span>
+                        <span style="font-weight:bold">${{item.price}}</span>
                         <b-button class="btn  pull-right" type="button" >{{item.attributes.listType}}</b-button>
                     </div>
                 </b-col>
                 <b-col cols="12">
-                    <b-card-body style="height:100%;">
-                        <div style="height:55%">
+                    <b-card-body style="height:100%;" >
+                        <span style="height:55%;" class="px-3">
                             <b-card-title>{{item.propertyName}}</b-card-title>
-                            <b-card-sub-title>{{item.address}}</b-card-sub-title>     
-                        </div>    
+                            <b-card-sub-title>{{item.address}}</b-card-sub-title>   
+                            <b-row style="border-bottom: 1px #d9d6d1 solid; font-size:14px; color:#565656;" class="py-3 py-sm-3 ml-1">
+                                <span class="pr-4"><img src="/homepage/bedsroom.png">{{item.description.bedrooms}}</span>
+                                <span class="pr-4"><img src="/homepage/bath.png">{{item.description.bathrooms}}</span>
+                                <span class="pr-4"><img src="/homepage/carparking.png">{{item.description.parkings}}</span>
+                                <span class="pr-4"><img src="/homepage/lands.png">{{item.description.landSize}}​m<sup>2</sup></span>
+                            </b-row>  
+                            <b-row class="ml-1 pt-3 mr-1" style="color:#bcbcbc; ">
+                                <span ><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                                <div class="ml-auto" style="font-size:13px"><img src="/homepage/calender.png">25 days ago</div>
+                            </b-row>
+                        </span>    
                     </b-card-body>              
                 </b-col>
             </b-row>
@@ -33,6 +43,7 @@ export default {
     #productCard .card-subtitle{
         font-size: 13px;
     }
+   
     #productCard .price{
         position:absolute;
         bottom:0;
@@ -50,4 +61,9 @@ export default {
         border:none;
         border-radius:30px;
     }
+
+    #productCard .card-body{
+        padding-bottom:0;
+    }
+   
 </style>

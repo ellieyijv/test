@@ -12,7 +12,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="#">Buy</a>
+                  <a class="nav-item nav-link active" href="buy">Buy</a>
                   <a class="nav-item nav-link" href="#">Sell</a>
                   <a class="nav-item nav-link" href="#">Rent</a>
                   <a class="nav-item nav-link" href="#">About</a>

@@ -10,7 +10,7 @@
                         <b-card-text style="font-size:13px; color:#ACACAC">
                             {{item.position}}
                         </b-card-text>
-                        <div slot="footer"><small style="color:#f3755e">
+                        <div slot="footer"><small style="color:#f3755e;">
                              <i class="fa fa-phone p-2" aria-hidden="true"></i>{{item.phone}}
                             </small></div>
                         </b-card>
@@ -55,8 +55,7 @@ export default {
 
 <style scoped>
     #agences{
-        margin:4rem auto;
-        
+        margin:4rem auto;  
     }
     .agences-title{
         padding-bottom:3rem;
@@ -74,10 +73,21 @@ export default {
     }
     #agences .card{
         margin: 1rem auto;
+        border:none;
+    }
+    #agences .card-body, #agences .card-footer{
+        border-left: 1px solid rgba(0, 0, 0, 0.125);
+        border-right:1px solid rgba(0, 0, 0, 0.125);
     }
 
     #agences .card-title{
         font-size:18px;
+    }
+
+    #agences .card-footer{
+        background-color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        
     }
     @media (max-width:576px) {
          #agences .card{

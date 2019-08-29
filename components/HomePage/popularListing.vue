@@ -126,7 +126,7 @@ export default {
 </script>
 <style scoped>
     #popular{
-        background-color: #d9d6d1;
+        background-color: rgba(217, 214, 209, 0.4);
         padding: 4em 0;
     }
     #popular .btn-outline-danger{
@@ -159,7 +159,7 @@ export default {
     }
     @media (max-width:576px) {
          #popular .card{
-           width:60vw;
+           width:80vw;
            margin:auto;
         }
     }
