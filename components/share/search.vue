@@ -10,13 +10,13 @@
         </ul>
         <b-form class="search-form p-3">
             <b-form-row style="border-bottom: 1px solid #d9d6d1;" class="pb-3">
-                <b-col sm="6" class="border-rightStyle" >
+                <b-col sm="6" class="border-rightStyle pb-2 pb-md-0" >
                     <div style="text-align:left;" class="pt-1">
                         <span class="input-group-addon"><img src="/homepage/place-marker.png"></span>
                         <input style="width:90%; font-size:14px; " placeholder="Enter State, City or Postcode" />
                     </div>
                 </b-col>
-                <b-col sm="6" md="6" lg="2" class="border-rightStyle pb-md-2 py-lg-0">
+                <b-col sm="6" md="6" lg="2" class="border-rightStyle pb-2 pb-md-2 py-lg-0">
                     <select
                         class="selectpicker form-control" 
                         multiple
@@ -35,7 +35,7 @@
                 </b-col>
             </b-form-row>
             <b-form-row class="pt-3">
-                <b-col cols="3" class="border-rightStyle"> 
+                <b-col  md="3" class="border-rightStyle"> 
                     <select
                         class="selectpicker form-control" 
                         title="Min Bedrooms">

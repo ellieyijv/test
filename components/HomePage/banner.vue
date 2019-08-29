@@ -46,7 +46,7 @@ export default {
             font-size:24px;
         }
         #hero-banner {
-            height:45vh;
+            height:63vh;
         }
     }
    

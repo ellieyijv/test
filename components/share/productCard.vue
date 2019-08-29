@@ -1,5 +1,5 @@
 <template>
-        <b-card no-body class="overflow-hidden text-left" style="max-width: 750px;" id="productCard">
+        <b-card no-body class="overflow-hidden text-left" style="max-width: 750px;" id="productCard"  >
             <b-row no-gutters>
                 <b-col cols="12" style="position:relative">
                     <b-card-img src="/homepage/popularlist.png" class="rounded-0"></b-card-img>
@@ -9,8 +9,8 @@
                     </div>
                 </b-col>
                 <b-col cols="12">
-                    <b-card-body style="height:100%;" >
-                        <span style="height:55%;" class="px-3">
+                    <b-card-body style="height:100%;" class="p-sm-1 p-md-3 pb-sm-0">
+                        <span style="height:55%;" >
                             <b-card-title>{{item.propertyName}}</b-card-title>
                             <b-card-sub-title>{{item.address}}</b-card-sub-title>   
                             <b-row style="border-bottom: 1px #d9d6d1 solid; font-size:14px; color:#565656;" class="py-3 py-sm-3 ml-1">
@@ -62,8 +62,5 @@ export default {
         border-radius:30px;
     }
 
-    #productCard .card-body{
-        padding-bottom:0;
-    }
    
 </style>

@@ -10,7 +10,7 @@
                                 img-alt="Image" 
                                 overlay 
                                 text-variant="white"> 
-                                <div class="card-content">
+                                <div class="card-content pt-xl-3">
                                     <b-card-title>{{item.category}}</b-card-title>
                                     <b-card-sub-title>{{item.quantity+ 'Listings'}}</b-card-sub-title>
                                 </div>  
