@@ -13,7 +13,7 @@
                 <b-col sm="6" class="border-rightStyle pb-2 pb-md-0" >
                     <div style="text-align:left;" class="pt-1">
                         <span class="input-group-addon"><img src="/homepage/place-marker.png"></span>
-                        <input style="width:90%; font-size:14px; " placeholder="Enter State, City or Postcode" />
+                        <input style="width:90%; font-size:14px; height:39px" placeholder="Enter State, City or Postcode" />
                     </div>
                 </b-col>
                 <b-col sm="6" md="6" lg="2" class="border-rightStyle pb-2 pb-md-2 py-lg-0">

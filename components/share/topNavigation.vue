@@ -2,7 +2,7 @@
   <div class="container-fluid" id="top-nav">
     <b-container>
       <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
               <img src="/agncologo.png" alt="logo" />
           </a>
           <button class="navbar-toggler" type="button" style="border:none" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
