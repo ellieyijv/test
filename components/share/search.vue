@@ -1,6 +1,6 @@
 <template>
     <div class="container" id="search_component">
-        <ul class="nav nav-tabs ml-4 mt-3 mt-md-0" >
+        <ul class="nav nav-tabs ml-4 mt-0 mt-sm-3 mt-md-0" >
             <li class="nav-item">
                 <a class="nav-link active" href="#">Buy</a>
             </li>
@@ -35,7 +35,7 @@
                 </b-col>
             </b-form-row>
             <b-form-row class="pt-3">
-                <b-col  md="3" class="border-rightStyle"> 
+                <b-col cols="6" md="3" class="border-rightStyle"> 
                     <select
                         class="selectpicker form-control" 
                         title="Min Bedrooms">
@@ -44,7 +44,7 @@
                         <option>3</option>
                     </select>
                 </b-col>
-                <b-col md="3" lg="2" class="border-rightStyle">
+                <b-col cols="6"  md="3" lg="2" class="border-rightStyle">
                     <select
                         class="selectpicker form-control" 
                         title="Min Bathrooms">
@@ -53,7 +53,7 @@
                         <option>3</option>
                     </select>
                 </b-col>
-                <b-col md="3" lg="2" class="border-rightStyle">
+                <b-col cols="6"  md="3" lg="2" class="border-rightStyle">
                     <select
                         class="selectpicker form-control" 
                         title="Min Parking">
@@ -62,7 +62,7 @@
                         <option>3</option>
                     </select>
                 </b-col>
-                <b-col md="3" lg="2" class="border-rightStyle">
+                <b-col cols="6" md="3" lg="2" class="border-rightStyle">
                     <select
                         class="selectpicker form-control" 
                         title="Min Area">
@@ -71,7 +71,7 @@
                         <option>3</option>
                     </select>
                 </b-col>
-                <b-col md="12" lg="2" class="pt-md-3 pt-lg-0 mx-auto">
+                <b-col md="12" lg="2" class="pt-md-3 pt-lg-0 mx-auto pt-2">
                      <b-btn size="sm px-4 py-2" class="search-btn">
                          <i class="fa fa-search fa-rotate-90" aria-hidden="true"></i>
                             Search
@@ -165,6 +165,5 @@ export default {
     #search_component .vue-slider-process{
         background-color:#f3755e !important
     }
-
 
 </style>
